@@ -3,7 +3,7 @@ import subprocess
 import json
 import time
 
-class Fan_PID(object):
+class Fan_Control(object):
   def __init__(self):
     super(Fan_PID, self).__init__()
     self.initialize_gpu_fan_control()
@@ -70,4 +70,4 @@ class Fan_PID(object):
   def print_dict(self, obj):
     print(json.dumps(obj, indent=4))
 
-fan_ob = Fan_PID()
+Fan_Control()
